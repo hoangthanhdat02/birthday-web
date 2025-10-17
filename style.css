@@ -863,4 +863,102 @@ body {
         margin-top: 0px!important;
         font-size: 1rem!important;
     }
+/* Mobile responsiveness */
+@media screen and (max-width: 767px) {
+  #wrapper {
+    padding: 10px;
+  }
 
+  .content {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100% !important;
+  }
+
+  .flag__birthday img {
+    width: 200px;
+  }
+
+  .title h1.happy,
+  .title h1.birthday {
+    font-size: 2.5em;
+  }
+
+  .box__account {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .box__account .image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .balloon_one img,
+  .balloon_two img {
+    width: 100px;
+  }
+
+  .cake_icon img {
+    width: 200px;
+  }
+
+  .box__letter {
+    width: 95%;
+  }
+
+  .letter__border {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .content__letter {
+    flex-direction: column;
+  }
+
+  .content__letter .left,
+  .content__letter .right {
+    width: 100%;
+  }
+
+  .heart__letter {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .love__img img {
+    width: 150px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #wrapper {
+    padding: 20px;
+  }
+
+  .flag__birthday img {
+    width: 250px;
+  }
+
+  .box__account {
+    width: 80%;
+  }
+
+  .box__letter {
+    width: 90%;
+  }
+
+  .letter__border {
+    width: 85%;
+  }
+}
+
+/* Desktop/PC */
+@media screen and (min-width: 1024px) {
+  #wrapper {
+    padding: 30px;
+  }
+}
