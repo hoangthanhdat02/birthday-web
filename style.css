@@ -20,9 +20,9 @@
     position: relative;
     bottom: 95px;
     right: -500px; 
-    opacity: 0; /* Ẩn ban đầu */
+    opacity: 0; 
     animation: showIcon 1s ease-in forwards;
-    animation-delay: 7s; /* chờ 7 giây mới bắt đầu xuất hiện */
+    animation-delay: 7s; 
 }
 @keyframes showIcon  {
     to{
@@ -31,8 +31,8 @@
 }
 .cat{
     position: relative;
-    right: 250px;
-    bottom: 20px;
+    right: 200px;
+    bottom:0px;
 }
 .heart__letter{
     position: relative;
@@ -40,8 +40,8 @@
 }
 .linh_avt{
     position:relative;
-    bottom:30px;
-    right: 610px;
+    bottom:10px;
+    right: 620px;
     border-radius: 50%;
 }
 .hoa_avt{
@@ -863,102 +863,78 @@ body {
         margin-top: 0px!important;
         font-size: 1rem!important;
     }
-/* Mobile responsiveness */
     @media screen and (max-width: 767px) {
     #wrapper {
-        padding: 10px;
-    }
+    min-height: 100vh;
+    padding: 15px;
+  }
 
-    .content {
-        flex-direction: column;
-    }
+  .content {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
 
-    .left, .right {
-        width: 100% !important;
-    }
+  .content .left, 
+  .content .right {
+    width: 100% !important;
+  }
 
-    .flag__birthday img {
-        width: 200px;
-    }
+  .content .left .title {
+    font-size: 1.8rem;
+  }
 
-    .title h1.happy,
-    .title h1.birthday {
-        font-size: 2.5em;
-    }
+  .content .right .image {
+    width: 280px !important;
+    height: 280px !important;
+  }
 
-    .box__account {
-        width: 90%;
-        margin: 20px auto;
-    }
+  .box__account {
+    margin-top: 30px;
+    transform: none !important;
+  }
 
-    .box__account .image {
-        width: 200px;
-        height: 200px;
-    }
+  .box__letter .letter__border {
+    width: 95%;
+    height: 80vh;
+  }
 
-    .balloon_one img,
-    .balloon_two img {
-        width: 100px;
-    }
+  .content__letter {
+    flex-direction: column;
+  }
 
-    .cake_icon img {
-        width: 200px;
-    }
+  .content__letter .left,
+  .content__letter .right {
+    width: 100% !important;
+    padding: 15px;
+  }
 
-    .box__letter {
-        width: 95%;
-    }
+  .letter__border .letter .title__letter {
+    font-size: 1.8rem;
+  }
 
-    .letter__border {
-        width: 90%;
-        padding: 15px;
-    }
+  .text__letter {
+    font-size: 1.1rem !important;
+  }
 
-    .content__letter {
-        flex-direction: column;
-    }
+  .balloon_one,
+  .balloon_two,
+  .decorate_flower--two,
+  .smiley__icon {
+    display: none;
+  }
+}
 
-    .content__letter .left,
-    .content__letter .right {
-        width: 100%;
-    }
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .content .left .title {
+    font-size: 2.2rem;
+  }
 
-    .heart__letter {
-        width: 100%;
-        max-width: 300px;
-    }
+  .content .right .image {
+    width: 320px;
+    height: 320px;
+  }
 
-    .love__img img {
-        width: 150px;
-    }
-    }
-
-    /* Tablet */
-    @media screen and (min-width: 768px) and (max-width: 1023px) {
-    #wrapper {
-        padding: 20px;
-    }
-
-    .flag__birthday img {
-        width: 250px;
-    }
-
-    .box__account {
-        width: 80%;
-    }
-
-    .box__letter {
-        width: 90%;
-    }
-
-    .letter__border {
-        width: 85%;
-    }
-    }
-
-    /* Desktop/PC */
-    @media screen and (min-width: 1024px) {
-    #wrapper {
-        padding: 30px;
-    }
-    }
+  .box__letter .letter__border {
+    width: 85%;
+  }
+}
